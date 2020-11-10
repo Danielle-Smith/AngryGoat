@@ -6,22 +6,27 @@ class Cart extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      cartItem: false
-    };
   }
   
   render() {
+    const productItem = props => {
+      const {
+        title,
+        price
+      } = props.productItem;
+    }
     return(
       <div className="cart">
         <div className="cart-header">
-          <div className="cart-header__title">Cart</div>
+          <div className="cart-header__title">Cart Item</div>
+          {title}
+          {price}
         </div>
 
 
         {this.state.cartItem == true ? 
           <div>
-            <CartItem />
+            
             <div className="cart-taxes-shipping">
               <p>Shipping: $5.00</p>
               <p>Subtotal: $20.00</p>

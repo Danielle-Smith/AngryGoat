@@ -5,6 +5,7 @@ import ProductContainer from '../product/product-container';
 import ShopHeader from './shop-header';
 import Searchbar from './searchbar';
 
+
 class Shop extends Component {
   render() {
     return(
@@ -14,7 +15,7 @@ class Shop extends Component {
         </div>
         <ShopHeader />
         <Searchbar />
-        <div className="product-wrapper">
+        <div className="product-wrappers">
           <ProductContainer />
         </div>
         

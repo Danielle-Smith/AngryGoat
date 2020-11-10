@@ -10,6 +10,7 @@ class App extends Component {
     Icons();
   }
 
+  
   render() {
     return (
       <div className='app'>

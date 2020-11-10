@@ -6,6 +6,7 @@ class ShopHeader extends Component {
   //   this.props.filterProductsWithQuery(fields)
   // }
 
+  
   render() {
     return(
       <div className='shop-header'>

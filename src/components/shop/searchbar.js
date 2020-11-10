@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-// import { reduxForm, Field } from 'redux-form';
-
 // import { faSearch } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

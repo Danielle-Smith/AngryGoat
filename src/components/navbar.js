@@ -26,6 +26,7 @@ class Navbar extends Component {
           </Link>
         </div>
       </div>
+      
     )
   }
 }

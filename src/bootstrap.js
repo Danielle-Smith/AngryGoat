@@ -8,6 +8,7 @@ import reducers from "./reducers";
 import history from './history';
 
 
+
 import App from "./components/app";
 import Shop from "./components/shop/shop";
 import ProductDetailPage from "./components/product/product-detail-page";
@@ -28,7 +29,9 @@ function main() {
             <Route path='/' exact component={Shop} />
             <Route path='/product/:slug' render={props => (<ProductDetailPage {...props} /> )} />
             <Route path='/contact' exact component={Contact} />
-            <Route path='/cart' exact component={Cart} />
+            <Route path='/cart' render={props => (
+              <Cart {...props} />
+            )} />
           </Switch>
         </App>
       </Router>

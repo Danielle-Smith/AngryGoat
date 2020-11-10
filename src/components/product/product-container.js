@@ -12,9 +12,10 @@ class ProductContainer extends Component {
     };
   }
 
+  
   getProductItems() {
     axios
-      .get('http://127.0.0.1:5000/t-shirts')
+      .get('http://127.0.0.1:5000/products')
       .then(response => {
         this.setState({
           products: response.data
@@ -31,11 +32,11 @@ class ProductContainer extends Component {
 
   render() {
     return(
-      <div>
+      <div className="the-product">
 
         {
           this.state.products !== null ?
-          <div>
+          <div className="product-wrapper">
             {
                 Object.entries(this.state.products).map( item => (
                   <ProductItem key={item[1].id} id={item[1].id} item={item[1]} title={item[1].title} price={item[1].price} slug={item[1].id}/>

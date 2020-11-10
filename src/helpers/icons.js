@@ -6,4 +6,5 @@ const Icons = () => {
     return library.add(faTrash, faSignOutAlt, faEdit, faSpinner, faPlusCircle, faEnvelope, faPhone, faMapMarkerAlt, faLock, faFacebookSquare, faInstagram, faShoppingCart, faSearch);
 }
 
+
 export default Icons;
